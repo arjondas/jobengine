@@ -1,0 +1,17 @@
+.search {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+p {
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(56, 62, 75);
+    transition: color 1s;
+}
+

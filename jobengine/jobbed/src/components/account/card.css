@@ -1,0 +1,75 @@
+.Base {
+    width: 250px;
+    color: #1de9b6;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+    z-index: 5;
+    background: rgb(56, 62, 75);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3); */
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 2px;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+p1 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+p2 {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+p3 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+p3:hover {
+    color: #00ffbf;;
+}
+
+.Button {
+    background: rgb(72, 81, 98);
+    font: inherit;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    color: #1de9b6;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    transition: background 0.5s; 
+}
+
+.Button:hover {
+    background: rgb(20, 24, 31);
+}
+
+.customInput {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 20px 20px 10px 0 ;
+    width: 90%;
+    color: white;
+    outline: none;
+    transition: border-bottom-color 1s;
+}
+
+.customInput:focus {
+    border-bottom-color:  #1de9b6;
+}
+
+
