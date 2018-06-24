@@ -1,0 +1,14 @@
+.clockContainer{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: royalblue;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 20px;
+    width: 50px;
+    line-height: 20px;
+    border-radius: 10px;
+}

@@ -7,7 +7,7 @@
     background: rgb(56, 62, 75);
     /* box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3); */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    border-bottom: 10px solid rgb(56, 62, 75);
+    border-bottom: 5px solid rgb(56, 62, 75);
     border-right: 15px solid rgb(56, 62, 75);
     border-left: 15px solid rgb(56, 62, 75);
     border-radius: 2px;
@@ -27,4 +27,11 @@
 
 .customInput:focus {
     border-bottom-color:  #1de9b6;
+}
+
+.searchIcon {
+    color: rgb(56, 62, 75);
+    position: absolute;
+    top: calc(50% + 2.5px);
+    right: -30px;
 }

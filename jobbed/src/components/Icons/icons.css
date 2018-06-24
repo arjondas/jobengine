@@ -1,0 +1,6 @@
+.Icon {
+    position: relative;
+    display: inline-block;              /* very important setting */
+    vertical-align: middle;             /* very important setting */
+    color: inherit;
+}

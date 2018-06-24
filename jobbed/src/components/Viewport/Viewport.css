@@ -1,0 +1,33 @@
+.Viewport {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+.Canvas {
+    width: 100%;
+    padding: 20px;
+}
+
+.Navbar {
+    width: 64px;                            
+    height: 100%;
+    text-align: center;
+    z-index: -10;
+}
+
+.DummyNav {                         /* contains the actual nav bar for the fixed nav bar effect */
+    height: 95%;
+    width: 60px;
+    margin: auto;
+    position: fixed;
+    transform: translate(15%,-50%);             /* temporary settings */
+    top: 50%;                                   /* temporary settings */
+    border-radius: 10px;
+    background-color: rgb(248, 249, 253);
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+}

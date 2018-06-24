@@ -1,8 +1,9 @@
 .search {
     position: absolute;
     text-align: center;
+    /* background-color: red; */
     width: 100%;
-    top: 30%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);

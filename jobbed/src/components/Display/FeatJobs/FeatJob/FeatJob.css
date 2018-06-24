@@ -1,0 +1,8 @@
+.job {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0 1px 15px rgba(0,0,0,0.3);
+    padding: 0;
+    margin: 25px 30px 25px 30px;
+}

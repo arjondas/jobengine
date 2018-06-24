@@ -1,0 +1,64 @@
+.summary {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile {
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(65, 105, 225, 0.1);
+}
+
+.photo {
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+.name {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.designation {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stats {
+    height: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.stat1 {
+    width: 100%;
+    padding: 10px;
+}
+.stat2 {
+    width: 100%;
+    padding: 10px;
+}
+.stat3 {
+    width: 100%;
+    padding: 10px;
+}
+
+.numbers {
+    font-size: 10px;
+}

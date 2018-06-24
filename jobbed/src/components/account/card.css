@@ -73,3 +73,13 @@ p3:hover {
 }
 
 
+.cancelButton {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+}
+
+.cancelButton:hover {
+    color: #1de9b6;
+}

@@ -24,7 +24,7 @@ class Search extends PureComponent {
         }
         return(
             <div className = {classes.search}>
-                <p style = {styling}>Search Jobs</p>
+                {/* <p style = {styling}>Search Jobs</p> */}
                 <Bar change = {this.searchHandler} />
             </div>
 

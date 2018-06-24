@@ -1,0 +1,15 @@
+.row {
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.5s, border-left 0.25s, background-color 0.5s;
+}
+
+.row:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+

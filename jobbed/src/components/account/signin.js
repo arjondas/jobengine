@@ -1,9 +1,15 @@
 import React from 'react';
 import classes from './card.css';
+import Icons from '../Icons/icons';
 
 const signin = (props) => {
     return (
         <div className = {classes.Base}>
+            <div 
+                className = {classes.cancelButton}
+                onClick = {props.cancel}>
+                <Icons type = "cross" size = "25px"/>
+            </div>
             <br/><p1 onClick = {this.toggleSignInMenu}>Sign In</p1>
             <p></p>
             <input className = {classes.customInput} type = "email" placeholder = "Email"/>
