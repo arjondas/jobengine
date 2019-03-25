@@ -4,19 +4,24 @@ import Icons from '../../../Icons/icons';
 
 class SearchBar extends Component {
     state = {
-        value: '',
+        term: '',
+        location: '',
     };
     
-    handleChange = this.handleChange.bind(this);
+    handleChangeTerm = this.handleChangeTerm.bind(this);
+    handleChangeLocation = this.handleChangeLocation.bind(this);
     handleSubmit = this.handleSubmit.bind(this);
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
-        console.log(event.target.value);
+    handleChangeTerm(event) {
+        this.setState({term: event.target.value});
+    }
+
+    handleChangeLocation(event) {
+        this.setState({location: event.target.value});
     }
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
+        this.props.submit(this.state.term, this.state.location);
         event.preventDefault();
     }
     
@@ -26,12 +31,12 @@ class SearchBar extends Component {
                 <form className = {classes.formStyling} onSubmit = {this.handleSubmit}>
                     <input 
                         className = {classes.profession} 
-                        type = "text" value = {this.state.value} 
-                        list = "data" onChange = {this.handleChange} 
+                        type = "text" value = {this.state.term} 
+                        list = "data" onChange = {this.handleChangeTerm} 
                         placeholder = "Job Title, Skills, or Company" 
                         autoFocus
                     />
-                    <input className = {classes.location} type = "text" placeholder = "City, State or Zip"/>
+                    <input className = {classes.location} type = "text" value = {this.state.location} placeholder = "City, State or Zip" onChange = {this.handleChangeLocation}/>
                     <button className = {classes.submission} type = "submit"><Icons type = "search" size = "20px"/></button>
                 </form>
             </div>

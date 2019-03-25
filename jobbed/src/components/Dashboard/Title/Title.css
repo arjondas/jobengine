@@ -8,5 +8,5 @@
     font-weight: bolder;
     /* border-radius: inherit; */
     border-bottom: 3px solid rgb(239, 240, 245);
-    z-index: 100;
+    z-index: 10;
 }

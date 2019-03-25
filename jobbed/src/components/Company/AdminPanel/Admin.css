@@ -1,0 +1,107 @@
+.admin {
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s, color 0.5s;
+}
+
+.admin:hover {
+    color: royalblue;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pointLeft {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(107,107,107);
+    /* float: left; */
+}
+
+.pointRight {
+    float: right;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    /* background-color: red; */
+}
+
+.formInput {
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 0 10px 0 10px;
+    width: 250px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 7px;
+    outline: none;
+    color: royalblue;
+    border: none;
+    /* border-bottom: 2px solid rgba(65, 105, 225, 0.5); */
+    background-color: rgba(0, 0, 0, 0);
+    /* box-shadow: 0 0px 20px rgba(65, 105, 225, 0.12); */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    caret-color: royalblue;
+    transition: border-bottom 0.5s, box-shadow 0.5s;
+    vertical-align: middle;
+}
+
+.formInput:-moz-placeholder{
+    color: royalblue;
+}
+
+.formInput::-webkit-input-placeholder{
+    color: royalblue;
+}
+
+.Button {
+    color: royalblue;
+    font-size: 12px;
+    /* background-color: white; */
+    background-color: white;
+    box-sizing: border-box;
+    width: 120px;
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    /* display: inline-block; */
+    /* border: 2px solid rgba(0, 0, 0, 0); */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: color 0.5s, background-color 0.5s, width 0.5s;
+}
+
+.Button:hover {
+    color:  white;
+    background-color: royalblue;
+}
+  
+.spinner {
+    /* background-color: red; */
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* border-top: 2px solid royalblue; */
+    /* border-bottom: 2px solid royalblue; */
+    border: 2px solid royalblue;
+    animation: spinner 1s linear infinite;
+    border-color: white white white transparent;
+    transition: border-color 0.5s;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

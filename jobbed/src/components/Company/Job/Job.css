@@ -1,0 +1,84 @@
+.post {
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.pointLeft {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(107,107,107);
+    /* float: left; */
+}
+
+.pointRight {
+    float: right;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    /* background-color: red; */
+}
+
+.formInput {
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 0 10px 0 10px;
+    width: 250px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 7px;
+    outline: none;
+    color: royalblue;
+    border: none;
+    /* border-bottom: 2px solid rgba(65, 105, 225, 0.5); */
+    background-color: rgba(0, 0, 0, 0);
+    /* box-shadow: 0 0px 20px rgba(65, 105, 225, 0.12); */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    caret-color: royalblue;
+    transition: border-bottom 0.5s, box-shadow 0.5s;
+    vertical-align: middle;
+}
+
+.formInput:-moz-placeholder{
+    color: rgba(65, 105, 225, 0.5);
+}
+
+.formInput::-webkit-input-placeholder{
+    color: rgba(65, 105, 225, 0.5);
+}
+
+.description {
+    height: 200px;
+    width: 100%;
+    color: royalblue;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 10px;   
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.description::-moz-placeholder {
+    color: rgba(65, 105, 225, 0.5);
+    font-family: sans-serif;
+}
+
+.description::-webkit-input-placeholder {
+    color: rgba(65, 105, 225, 0.5);
+    font-family: sans-serif;
+}
+
+.empty {
+    font-size: 20px;
+    color: lightgrey;
+}

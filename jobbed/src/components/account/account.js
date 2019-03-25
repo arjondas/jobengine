@@ -1,29 +1,23 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 import Animate from 'react-move/Animate';
 import {easeExpOut} from 'd3-ease';
 import SignIn from './signin';
 import SignUp from './signup';
 import classes from './account.css';
 import Icons from '../Icons/icons';
-import axios from 'axios';
 
 const animationDuration = 1000
 
-class Account extends PureComponent {
+class Account extends Component {
     state = {
         showOption : false,
         showSignUp : false,
-    }
-    signUpHandler = () => {
-        const data = {
-            
-        }
-
-        axios.post('http://172.20.10.3:8080/signup',);
+        loggedIn : this.props.status,
     }
 
     showOptions = () => {
         const temp = this.state.showOption;
+        console.log("Login Clicked");
         this.setState({
             showOption: !temp,
         });
@@ -40,7 +34,6 @@ class Account extends PureComponent {
         this.setState({
             showOption: !tempOption,
         })
-        
         setTimeout(() => {
             this.setState({
                 showSignUp: !temp,
@@ -49,27 +42,45 @@ class Account extends PureComponent {
         }, animationDuration/2);
     }
 
+    logOutHandler = () => {
+        localStorage.setItem('token', null);
+        localStorage.setItem('tabCompany', null);
+        // this.state.loggedIn = false;
+        console.log('logging out');
+        this.props.logout();
+        this.props.verify();
+    }
+
     render() {
-        let view = null;
-        if(this.state.showSignUp) {
-            view = <SignUp click = {this.showSignUpOptions} cancel = {this.showOptions}/>
+        let accountAction = null;
+        if(this.props.status) {
+            accountAction = (
+                <div>
+                    <button className = {classes.Button} onClick = {this.logOutHandler}><Icons type = "logout" size = {25}/></button>
+                </div>
+            )
         } else {
-            view = <SignIn click = {this.showSignUpOptions} cancel = {this.showOptions}/>
-        }
-        let styling = null;
-        if(this.state.showOption) {
-            styling = ({
-                borderBottom: "3px solid #1de9b6",
-                color: "#1de9b6",
-            })
-        }
-        return (
-            <div>
+            let view = null;
+            let details = null;
+            if(this.state.showSignUp) {
+                view = <SignUp click = {this.showSignUpOptions} cancel = {this.showOptions}/>
+            } else {
+                view = <SignIn verify = {this.props.verify} click = {this.showSignUpOptions} cancel = {this.showOptions}/>
+            }
+            let styling = null;
+            if(this.state.showOption) {
+                // view = details;
+                styling = ({
+                    color: "royalblue",
+                })
+            }
+            accountAction = (
+                <div>
                 <button 
                     className = {classes.Button} 
                     onClick = {this.showOptions}
                     style = {styling}>
-                    <Icons type = "login" size = {'30px'}/>
+                    <Icons type = "login" size = {25}/>
                 </button>
                 <div className = {classes.account}>
                     <Animate
@@ -98,6 +109,13 @@ class Account extends PureComponent {
                         }}
                     </Animate>
                 </div>
+            </div>
+            )
+        }
+        // console.log("Account Settings loaded");
+        return (
+            <div>
+                {accountAction}
             </div>
         )
     }

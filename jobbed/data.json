@@ -1,6 +1,3 @@
 {
-	"name" : "arjon",
-	"username" : "arjon",
-	"email" : "arjon",
-	"password": "maga"
+	"token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNTMwMTk3MTkyIiwidXNlcm5hbWUiOiJjIn0.L2BhnmzYJh7fmwSxVfXYY0oDn85QjYGBVxAZZz10gJE"
 }

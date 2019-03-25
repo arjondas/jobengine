@@ -1,0 +1,36 @@
+.box {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 40px 30px;
+    /* height: 300px; */
+    display: inline-block;
+    /* width: 500px; */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.container {
+    width: 70%;
+}
+
+.submit {
+    background-color: royalblue;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tableCenter {
+    display: table;
+    margin: auto;
+}
+
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+}

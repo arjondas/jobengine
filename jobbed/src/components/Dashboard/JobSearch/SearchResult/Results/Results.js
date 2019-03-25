@@ -4,15 +4,19 @@ import Result from './Result';
 const results = (props)=> {
     return props.list.map((company,index) => {
         return(
-            <Result key = {company.id} 
-                name = {company.compName} 
+            <Result 
+                key = {company.ID}
+                ID = {company.ID}
+                name = {company.companyName}
+                title = {company.title}
                 field = {company.field}
-                deadline = {company.deadLine}
+                deadline = {company.deadline}
                 salary = {company.salary}
-                year = {company.expYear}
+                experience = {company.experience}
                 description = {company.description}
-                type = {company.jobType}
-                address = {company.address}
+                type = {company.type}
+                location = {company.location}
+                toggle = {props.toggle}
             />
         )
     })

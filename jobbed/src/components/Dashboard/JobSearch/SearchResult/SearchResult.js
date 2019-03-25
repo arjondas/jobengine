@@ -14,9 +14,22 @@ class Result extends Component {
     }
 
     render() {
+        let result = null;
+        if(this.props.result !== null) {
+            result = (
+                <Results list = {this.props.result} toggle = {this.props.toggle}/>
+            )
+        } else {
+            result = (
+                <div className = {classes.empty}>
+                    <br/><br/><br/>
+                    Provide Search Terms
+                </div>
+            )
+        }
         return(
             <div className = {classes.resultPanel}>
-                <Results list = {this.state.result}/>
+                {result}
             </div>
         )
     }

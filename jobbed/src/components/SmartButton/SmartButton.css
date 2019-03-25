@@ -1,0 +1,21 @@
+.Button {
+    color: royalblue;
+    font-size: 12px;
+    background-color: white;
+    box-sizing: border-box;
+    /* width: 120px; */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, width 0.25s ease-in-out;
+}
+
+.Button:hover {
+    color:  white;
+    background-color: royalblue;
+}
+
+.ButtonWidth {
+    width: 150px;
+}

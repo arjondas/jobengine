@@ -6,25 +6,30 @@ import RightSection from './RightSection/RightSection';
 class Dashboard extends Component {
     state = {
         tabs : [
-            {id: 1, title: "Profile", icon: "profile"},
-            {id: 2, title: "Search", icon: "search"},
-            {id: 3, title: "Messages", icon: "mail"},
-            {id: 4, title: "Events", icon: "calendar"},
-            {id: 5, title: "Connections", icon: "people"},
-            {id: 6, title: "Support", icon: "support"}
+            {ID: 1, title: "Profile", icon: "profile"},
+            {ID: 2, title: "Search", icon: "search"},
         ],
         selectedTab : 1,
+    }
+
+    constructor(props) {
+        super(props);
+        this.child = React.createRef();
     }
 
     changeSelection = (id) => {
         this.setState({selectedTab: id});
     }
 
+    reload = () => {
+        this.child.reloadSummary();
+    }
+
     render() {
         return (
             <div className = {classes.Dashboard}>
-                <LeftSection tabs = {this.state.tabs} selection = {this.state.selectedTab} toggle = {this.changeSelection}/>
-                <RightSection tabs = {this.state.tabs} selection = {this.state.selectedTab}/>
+                <LeftSection ref = {instance => {this.child = instance}} tabs = {this.state.tabs} selection = {this.state.selectedTab} toggle = {this.changeSelection} userData = {this.props.userData}/>
+                <RightSection tabs = {this.state.tabs} selection = {this.state.selectedTab} userData = {this.props.userData} update = {this.reload} mainReload = {this.props.mainReload}/>
             </div>
         )
     }

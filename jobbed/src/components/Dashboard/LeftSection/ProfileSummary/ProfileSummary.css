@@ -20,11 +20,25 @@
     height: 100px;
     line-height: 100px;
     width: 100px;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    border: 7px solid white;
+    background-size: contain;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     margin: auto;
     margin-top: 25px;
     margin-bottom: 15px;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border: 7px solid white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 100%;
 }
 
 .name {
@@ -42,7 +56,8 @@
 
 .stats {
     height: 100%;
-    display: flex;
+    display: table;
+    margin: auto;
     margin-bottom: 15px;
 }
 

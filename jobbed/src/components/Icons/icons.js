@@ -12,6 +12,12 @@ import {calendar} from 'react-icons-kit/entypo/calendar';
 import {profile} from 'react-icons-kit/icomoon/profile';
 import {mail} from 'react-icons-kit/entypo/mail';
 import {ic_help} from 'react-icons-kit/md/ic_help';
+import {home} from 'react-icons-kit/fa/home';
+import {ic_dashboard} from 'react-icons-kit/md/ic_dashboard';
+import {institution} from 'react-icons-kit/fa/institution';
+import {ic_add_circle_outline} from 'react-icons-kit/md/ic_add_circle_outline';
+import {menu} from 'react-icons-kit/entypo/menu';
+import {spinner8} from 'react-icons-kit/icomoon/spinner8';
 import classes from './icons.css';
 class Icons extends PureComponent {
     render() {
@@ -65,6 +71,30 @@ class Icons extends PureComponent {
         }else if(this.props.type === "mail") {
             iconType = (
                 <Icon icon = {mail} size = {this.props.size}/>
+            )
+        }else if(this.props.type === "home") {
+            iconType = (
+                <Icon icon = {home} size = {this.props.size}/>
+            )
+        }else if(this.props.type === "dashboard") {
+            iconType = (
+                <Icon icon = {ic_dashboard} size = {this.props.size}/>
+            )
+        }else if(this.props.type === "company") {
+            iconType = (
+                <Icon icon = {institution} size = {this.props.size}/>
+            )
+        }else if(this.props.type === "add") {
+            iconType = (
+                <Icon icon = {ic_add_circle_outline} size = {this.props.size}/>
+            )
+        }else if(this.props.type === "menu") {
+            iconType = (
+                <Icon icon = {menu} size = {this.props.size}/>
+            )
+        }else if(this.props.type === "spinner") {
+            iconType = (
+                <Icon icon = {spinner8} size = {this.props.size}/>
             )
         }
         return(

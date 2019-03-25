@@ -4,3 +4,10 @@
     z-index: 100;
     margin-top: 40px;
 }
+
+.empty {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: lightgrey;
+}

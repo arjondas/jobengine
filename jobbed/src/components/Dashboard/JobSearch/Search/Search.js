@@ -9,10 +9,10 @@ class Search extends Component {
             <div className = {classes.body}>
                 <div className = {classes.search}>
                     <div className = {classes.heading}>
-                        CareerStation: Find the right job...
+                        Job Station: Find the right job...
                     </div>
-                    <SearchBar/>
-                    <SearchResult/>
+                    <SearchBar submit = {this.props.submit}/>
+                    <SearchResult result = {this.props.result} toggle = {this.props.toggle}/>
                 </div>
             </div>
         )

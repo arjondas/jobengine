@@ -6,16 +6,17 @@
 
 .Button {
     position: absolute;
-    color: white;
     right: 5%;
-    width: 60px;
-    height: 100%;
-    background-color: rgb(72, 81, 98);
+    /* width: 100px; */
+    /* text-align: center; */
+    /* height: 100%; */
+    /* background-color: rgb(72, 81, 98); */
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     padding: 0;
     transition: color 0.5s, border-bottom 0.5s;
 }
 
 .Button:hover {
-    color: #1de9b6;
+    color: royalblue;
 }

@@ -2,4 +2,40 @@
     height: 100%;
     width: 40%;
     border-left: 3px solid rgb(239, 240, 245);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.view {
+    /* height: 100%; */
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    text-align: center;
+    font-weight: bolder;
+    /* background-color: red; */
+}
+
+.title {
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.describe {
+    font-size: 18px;
+    text-align: left;
+}
+
+.describeSmall {
+    font-size: 14px;
+    text-align: left;
+}
+
+.describeLight {
+    font-size: 12px;
+    text-align: justify;
+    font-weight: normal;
 }
