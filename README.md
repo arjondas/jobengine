@@ -2,7 +2,7 @@
 
 This is a simple website for searching jobs
 
-# fix the security vernabilities yourself
+# fix security vernabilities yourself
 
 # How to run it
 
