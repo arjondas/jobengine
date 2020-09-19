@@ -1,8 +1,8 @@
 # jobengine
 
-This is a simple website for searching jobs
+This is a simple website written on react for searching jobs.
 
-# fix security vernabilities yourself
+# Fix security vernabilities yourself
 
 # How to run it
 
