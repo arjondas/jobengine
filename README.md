@@ -8,9 +8,7 @@ This is a simple website written on react for searching jobs.
 
 `git clone https://github.com/arjondas/jobengine.git`
 
-`cd jobengine`
-
-`cd jobbed`
+`cd jobengine/jobbed`
 
 `npm install`
 
