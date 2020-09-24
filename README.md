@@ -2,7 +2,7 @@
 
 This is a simple website written on react for searching jobs.
 
-# Fix security vernabilities yourself
+# Please attend the security vernabilities before use
 
 # How to run it
 
