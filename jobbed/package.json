@@ -43,7 +43,7 @@
     "react-jwt-store": "^2.2.0",
     "react-live-clock": "^2.0.3",
     "react-materialize": "^2.2.0",
-    "react-move": "^2.7.0",
+    "react-move": "^6.5.0",
     "react-pdf": "^3.0.5",
     "react-spinners": "^0.3.2",
     "resolve": "1.6.0",
